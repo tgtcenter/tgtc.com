@@ -1,18 +1,15 @@
 import React from "react";
-import './Card.css'
+import "./Card.css";
 
-const Card = () => {
+const Card = ({ imgUrl, title, description }) => {
   return (
     <div className="card" data-aos="flip-up" data-aos-delay="150">
       <div className="content">
         <div className="img">
-          {/* <img src="../assets/service-2.png" alt="service-icon" /> */}
+          <img src={imgUrl} alt="service-icon" />
         </div>
-        <h3>Facilities</h3>
-        <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit quis
-          illo necessitatibus aperiam voluptate quam quibusdam sint fugit nam.
-        </p>
+        <h3>{title}</h3>
+        <p>{description}</p>
       </div>
     </div>
   );

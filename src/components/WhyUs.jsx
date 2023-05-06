@@ -1,6 +1,7 @@
 import Card from "./Card";
+import React from "react";
 
-import React from 'react'
+import {serviceData} from "../assets/data/serviceData"
 
 export default function WhyUs() {
   return (
@@ -10,10 +11,13 @@ export default function WhyUs() {
         <h3>हम टैली सीखते नहीं है, टैली के साथ खेलते हैं.</h3>
       </div>
       <div class="service">
-        <Card />
-        <Card />
-        <Card />
-        <Card />
+        {serviceData.map((service) => (
+          <Card
+            imgUrl={service.imgUrl}
+            title={service.title}
+            description={service.description}
+          />
+        ))}
       </div>
     </div>
   );
