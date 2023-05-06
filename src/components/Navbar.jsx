@@ -3,7 +3,7 @@ import React from "react";
 export default function Navbar() {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
-      <a className="navbar-brand" href="www.tgtc.in">
+      <a className="navbar-brand" href="/">
         T G T C
       </a>
       <button
@@ -25,17 +25,17 @@ export default function Navbar() {
             </a>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="services">
+            <a className="nav-link" href="/">
               Services
             </a>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="about">
+            <a className="nav-link" href="/">
               About
             </a>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="contact-us">
+            <a className="nav-link" href="/">
               Contact Us
             </a>
           </li>
